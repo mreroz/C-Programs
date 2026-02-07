@@ -1,0 +1,42 @@
+using System.Diagnostics;
+
+internal class Pet
+{
+    // Atributes
+    private string name; //name of the pet
+    private int age; //age as an integer
+    private bool isFemale; //true íf female,false otherwise
+    
+    // Methods
+
+    // M1 - Read user inputs
+    private void ReadPetInfo()
+    {
+        Console.Write("What is the name or your pet? ");
+        name = Console.ReadLine();
+
+        Console.Write("What is " + name + "'s age? ");
+        age = int.Parse(Console.ReadLine());
+
+        Console.Write("Is your pet a female? (y/n): ");
+        string strGender = Console.ReadLine().ToLower();
+        isFemale = (strGender[0] == 'y');
+    }
+
+    // M2 - Display pet info
+    private void DisplayPetInfo()
+    
+
+    // M3 - Start method
+
+}
+
+public class Album
+{
+    // Album name, artist name, and number of tracks
+    private string albumName; // Name of the album
+    private string artistName; // Name of the artist
+    private int numOfTracks; // Number of tracks in the album
+    
+    //more code
+}
